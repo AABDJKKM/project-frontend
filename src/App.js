@@ -1,10 +1,13 @@
 import Footer from './components/Footer';
+import Opportunities from './pages/opportunities';
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header>Hello World!</header>
-      <main className="flex-1"></main>
+      <header>Hello Header</header>
+      <main className="flex-1">
+        <Opportunities />
+      </main>
       <Footer />
     </div>
   );
