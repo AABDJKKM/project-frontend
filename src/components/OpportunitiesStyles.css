@@ -1,0 +1,62 @@
+.opp-hero{
+    background-color: #264653;
+    color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.opp-hero p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 0 auto;
+}
+
+h5{
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.jobs-section{
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+
+.jobs-section > div{
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.full-time-box img{
+    width: 300px;
+    height: 300px;
+}
+
+.part-time-box img{
+    width: 300px;
+    height: 300px;
+}
+
+.apprentice-box img{
+    width: 300px;
+    height: 300px;
+}
+
+.intern-box img{
+    width: 300px;
+    height: 300px;
+}
+
+.full-time-box img::before{
+    content: "this is text erhdsgkjhsdjkfgsdjfgsdjkf"
+}
