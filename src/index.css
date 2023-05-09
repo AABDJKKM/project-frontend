@@ -1,21 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans&family=Open+Sans:wght@400;600&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Alkatra', cursive;
 }
 
-body{
-  background-color: pink;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1,h4,p,a{
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'IBM Plex Mono', monospace;
 }
 
-ul{
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+ul {
   list-style-type: none;
 }
-
