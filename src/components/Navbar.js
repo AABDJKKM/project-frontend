@@ -1,48 +1,50 @@
-import React, { useState } from "react";
-import "./NavbarStyles.css";
-import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import React, { useState } from 'react';
+import './NavbarStyles.css';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../assets/logo.svg';
 
 const Navbar = () => {
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
-
-
-
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
   return (
-    <div className="header">
-      <Link to="/">
-        <img className="logo" src="https://cdn4.iconfinder.com/data/icons/social-productivity-line-art-4/128/checkbox-square-unchecked-1024.png" alt="box"/>
-      </Link>
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
+    <header className="header">
+      <div>
+        <Link to="/">
+          <img src={logo} alt="The Digital Mosaic Logo" />
+        </Link>
+      </div>
+      <div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li>
             <Link to="/about">About</Link>
-        </li>
-        <li>
+          </li>
+          <li>
             <Link to="/community">Community</Link>
-        </li>
-        <li>
+          </li>
+          <li>
             <Link to="/Explore">Explore</Link>
-        </li>
-        <li>
+          </li>
+          <li>
             <Link to="/opportunities">Opportunities</Link>
-        </li>
-        <li>
+          </li>
+          <li>
             <Link to="/quiz">Quiz</Link>
-        </li>
-      </ul>
+          </li>
+        </ul>
+        <div>profile</div>
+      </div>
+
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} style={{color : "#fff"}} /> 
+          <FaTimes size={20} style={{ color: '#fff' }} />
         ) : (
-          <FaBars size={20} style={{color : "#fff"}} />
+          <FaBars size={20} style={{ color: '#fff' }} />
         )}
-        
-        
       </div>
-    </div>
-  )
-}
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
