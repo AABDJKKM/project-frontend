@@ -20,6 +20,7 @@ nav {
 
 .nav-menu li {
   padding: 0 4rem;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .nav-menu li a {
