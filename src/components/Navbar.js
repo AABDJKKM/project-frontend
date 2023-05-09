@@ -3,6 +3,7 @@ import './NavbarStyles.css';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/logo.svg';
+import userIcon from '../assets/user-icon.svg';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
           <img src={logo} alt="The Digital Mosaic Logo" />
         </Link>
       </div>
-      <div>
+      <nav>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li>
             <Link to="/about">About</Link>
@@ -33,8 +34,10 @@ const Navbar = () => {
             <Link to="/quiz">Quiz</Link>
           </li>
         </ul>
-        <div>profile</div>
-      </div>
+        <div className="profile">
+          <img src={userIcon} alt="" />
+        </div>
+      </nav>
 
       <div className="hamburger" onClick={handleClick}>
         {click ? (

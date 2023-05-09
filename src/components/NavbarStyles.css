@@ -6,18 +6,30 @@
   background-color: white;
 }
 
-.nav-menu {
-  display: inline-block;
+nav {
+  width: 100%;
   display: flex;
 }
 
+.nav-menu {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .nav-menu li {
-  padding: 0 1rem;
+  padding: 0 4rem;
 }
 
 .nav-menu li a {
   font-size: 1.2rem;
-  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.profile {
+  padding: 0 2rem;
 }
 
 .hamburger {
