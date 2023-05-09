@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './NavbarStyles.css';
+import '../styles/NavbarStyles.css';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../assets/logo.svg';
-import userIcon from '../../assets/user-icon.svg';
+import logo from '../assets/logo.svg';
+import userIcon from '../assets/user-icon.svg';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

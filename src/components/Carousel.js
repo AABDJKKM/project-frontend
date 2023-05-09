@@ -6,15 +6,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import './CarouselStyles.css';
+import '../styles/CarouselStyles.css';
 
 // import required modules
 import { Pagination } from 'swiper';
 
-import CarouselPic1 from '../../assets/CarouselPic1.webp';
-import CarouselPic2 from '../../assets/carouselPic2.webp';
-import CarouselPic3 from '../../assets/carouselPic3.webp';
-import CarouselPic4 from '../../assets/carouselPic4.webp';
+import CarouselPic1 from '../assets/CarouselPic1.webp';
+import CarouselPic2 from '../assets/carouselPic2.webp';
+import CarouselPic3 from '../assets/carouselPic3.webp';
+import CarouselPic4 from '../assets/carouselPic4.webp';
 
 const Carousel = () => {
   const pagination = {
