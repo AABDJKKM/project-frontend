@@ -38,7 +38,7 @@ const Carousel = () => {
             dolores et quas molestias excepturi sint occaecati cupiditate non
             provident, similique sunt in culpa qui
           </p>
-          <img className="image1" src={CarouselPic1} alt="image 1" />
+          <img className="image1" src={CarouselPic1} alt="uno" />
         </SwiperSlide>
         <SwiperSlide>
           <p>
@@ -47,7 +47,7 @@ const Carousel = () => {
             dolores et quas molestias excepturi sint occaecati cupiditate non
             provident, similique sunt in culpa qui
           </p>
-          <img src={CarouselPic2} alt="image2" />
+          <img src={CarouselPic2} alt="dos" />
         </SwiperSlide>
         <SwiperSlide>
           <p>
@@ -56,7 +56,7 @@ const Carousel = () => {
             dolores et quas molestias excepturi sint occaecati cupiditate non
             provident, similique sunt in culpa qui
           </p>
-          <img src={CarouselPic3} alt="image3" />
+          <img src={CarouselPic3} alt="tres" />
         </SwiperSlide>
         <SwiperSlide>
           <p>
@@ -65,7 +65,7 @@ const Carousel = () => {
             dolores et quas molestias excepturi sint occaecati cupiditate non
             provident, similique sunt in culpa qui
           </p>
-          <img src={CarouselPic4} alt="image4" />
+          <img src={CarouselPic4} alt="cuatro" />
         </SwiperSlide>
       </Swiper>
     </>
