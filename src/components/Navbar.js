@@ -1,53 +1,56 @@
-import React, { useState } from 'react';
-import '../styles/NavbarStyles.css';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../assets/logo.svg';
-import userIcon from '../assets/user-icon.svg';
+import React, { useState } from "react";
+import "../styles/NavbarStyles.css";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Logo from "../assets/Logo.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
+
+
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+
+
+
 
   return (
-    <header className="header">
-      <div>
-        <Link to="/">
-          <img src={logo} alt="The Digital Mosaic Logo" />
-        </Link>
-      </div>
-      <nav>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li>
+    <div className="header">
+      <Link to="/">
+        <img className="logo" src= {Logo} alt="box"/>
+      </Link>
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <li>
             <Link to="/about">About</Link>
-          </li>
-          <li>
+        </li>
+        <li>
             <Link to="/community">Community</Link>
-          </li>
-          <li>
+        </li>
+        <li>
             <Link to="/Explore">Explore</Link>
-          </li>
-          <li>
+        </li>
+        <li>
             <Link to="/opportunities">Opportunities</Link>
-          </li>
-          <li>
+        </li>
+        <li>
             <Link to="/quiz">Quiz</Link>
-          </li>
-        </ul>
-        <div className="profile">
-          <img src={userIcon} alt="" />
-        </div>
-      </nav>
-
+        </li>
+        <li>
+            <FontAwesomeIcon icon={faUserCircle} />
+        </li>
+      </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} style={{ color: '#fff' }} />
+          <FaTimes size={20} style={{color : "black"}} /> 
         ) : (
-          <FaBars size={20} style={{ color: '#fff' }} />
+          <FaBars size={20} style={{color : "black"}} />
         )}
+        
+        
       </div>
-    </header>
-  );
-};
+    </div>
+  )
+}
 
-export default Navbar;
+export default Navbar

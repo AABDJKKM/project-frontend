@@ -1,70 +1,80 @@
-.header {
+.header{
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: white;
+  position: relative;
+  z-index: 2;
 }
 
-nav {
-  width: 100%;
-  display: flex;
+.logo{
+  width: 200px;
+  height: auto;
 }
 
-.nav-menu {
+.box{
+  height: 40px;
+  width: 40px;
+  border: 2px solid black;
+  border-radius: 4px;
+  color: #969393;
+}
+
+.nav-menu{
   display: inline-block;
   display: flex;
-  justify-content: center;
-  width: 100%;
 }
 
-.nav-menu li {
-  padding: 0 4rem;
-  font-family: 'IBM Plex Mono', monospace;
+.nav-menu li{
+  padding: 0 1rem;
 }
 
-.nav-menu li a {
+.nav-menu li a{
   font-size: 1.2rem;
-  color: black;
-  text-decoration: none;
+  font-weight: 500;
 }
 
-.profile {
-  padding: 0 2rem;
-}
 
-.hamburger {
+.hamburger{
   display: none;
 }
 
 @media screen and (max-width: 1040px) {
-  .nav-menu {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    z-index: -3;
-    background: rgba(0, 0, 0, 0.9);
+  .nav-menu{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background: pink;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      z-index: 1;
+      margin-top: 11%;
   }
 
-  .nav-menu.active {
-    left: 0;
+  .nav-menu.active{
+      left: 0;
   }
 
-  .nav-menu li a {
-    padding: 1rem 0;
-    color: white;
+  .nav-menu li a{
+      padding: 1rem 0;
+      color: white;
   }
 
-  .nav-menu li a {
-    font-size: 2rem;
+  .nav-menu li a{
+      font-size: 2rem;
   }
 
-  .hamburger {
-    display: initial;
+  .hamburger{
+      display: initial;
+      z-index: 3;
+  }
+
+  .swiper{
+      position: relative;
+      z-index: 0;
   }
 }
