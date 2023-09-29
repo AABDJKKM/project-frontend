@@ -3,8 +3,8 @@ import "../styles/NavbarStyles.css";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/Logo.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/fontawesome-free';
+// import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 
 
 
@@ -37,7 +37,7 @@ const Navbar = () => {
             <Link to="/quiz">Quiz</Link>
         </li>
         <li>
-            <FontAwesomeIcon icon={faUserCircle} />
+            {/* <FontAwesomeIcon icon={faUserCircle} /> */}
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>

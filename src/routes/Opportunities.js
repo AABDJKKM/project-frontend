@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from "./Navbar";
-import "../components/OpportunitiesStyles.css";
+import Navbar from "../components/Navbar";
+import "../styles/OpportunitiesStyles.css";
 import {Link} from "react-router-dom";
 
 const Opportunities = () => {
