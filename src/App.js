@@ -1,40 +1,43 @@
-import {useState} from 'react';
-import React from "react";
-import "./index.css";
-import About from "./routes/About";
-import Community from "./routes/Community";
-import Explore from "./routes/Explore";
-import Home from "./routes/Home";
-import Opportunities from "./routes/Opportunities";
-import Quiz from "./routes/Quiz";
-import {Login} from "./routes/Login";
-import {Register} from "./routes/Register";
-import { Route, Routes } from "react-router-dom";
+import { useState } from 'react';
+import React from 'react';
+import './index.css';
+import About from './routes/About';
+import Community from './routes/Community';
+import Explore from './routes/Explore';
+import Home from './routes/Home';
+import Opportunities from './routes/Opportunities';
+import Quiz from './routes/Quiz';
+import { Login } from './routes/Login';
+import { Register } from './routes/Register';
+import { Route, Routes } from 'react-router-dom';
+import AllJobs from './routes/AllJobs.js';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
-  const toggleForm = (forName) => {
+  const toggleForm = forName => {
     setCurrentForm(forName);
-  }
+  };
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/> }/>
-        <Route path="/community" element={<Community/>} />
-        <Route path="/explore" element={<Explore/>} />
-        <Route path="/opportunities" element={<Opportunities/>} />
-        <Route path="/quiz" element={<Quiz/>} />
-        <Route path="/Login" element = {<Login/>}  />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/opportunities" element={<Opportunities />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/AllJobs" element={<AllJobs />} />
       </Routes>
 
-      <div className='App'>
-        {
-          currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm}/>
-        }
+      <div className="App">
+        {currentForm === 'login' ? (
+          <Login onFormSwitch={toggleForm} />
+        ) : (
+          <Register onFormSwitch={toggleForm} />
+        )}
       </div>
-
     </>
   );
 }

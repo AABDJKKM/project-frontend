@@ -1,0 +1,18 @@
+.jobs-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  height: 100%;
+}
+
+.display-jobs {
+  width: 90%;
+  border: 1px solid black;
+  height: 80%;
+}
+.jobs-list {
+  border-radius: 1 solid black;
+  margin-bottom: 5%;
+}
