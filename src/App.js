@@ -29,11 +29,11 @@ function App() {
         <Route path="/Login" element = {<Login/>}  />
       </Routes>
 
-      <div className='App'>
+      {/* <div className='App'>
         {
           currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm}/>
         }
-      </div>
+      </div> */}
 
     </>
   );
