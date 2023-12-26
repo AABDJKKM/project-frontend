@@ -7,7 +7,7 @@ import Explore from "./routes/Explore";
 import Home from "./routes/Home";
 import Opportunities from "./routes/Opportunities";
 import Quiz from "./routes/Quiz";
-import {Login} from "./routes/Login";
+import LoginForm from "./routes/LoginForm";
 import {Register} from "./routes/Register";
 import { Route, Routes } from "react-router-dom";
 
@@ -26,7 +26,7 @@ function App() {
         <Route path="/explore" element={<Explore/>} />
         <Route path="/opportunities" element={<Opportunities/>} />
         <Route path="/quiz" element={<Quiz/>} />
-        <Route path="/Login" element = {<Login/>}  />
+        <Route path="/Login" element = {<LoginForm/>}  />
       </Routes>
 
       {/* <div className='App'>
