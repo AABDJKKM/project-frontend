@@ -8,15 +8,15 @@ import Home from "./routes/Home";
 import Opportunities from "./routes/Opportunities";
 import Quiz from "./routes/Quiz";
 import LoginForm from "./routes/LoginForm";
-import {Register} from "./routes/Register";
+import Register from "./routes/Register";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [currentForm, setCurrentForm] = useState('login');
+  // const [currentForm, setCurrentForm] = useState('login');
 
-  const toggleForm = (forName) => {
-    setCurrentForm(forName);
-  }
+  // const toggleForm = (forName) => {
+  //   setCurrentForm(forName);
+  // }
   return (
     <>
       <Routes>
@@ -27,6 +27,7 @@ function App() {
         <Route path="/opportunities" element={<Opportunities/>} />
         <Route path="/quiz" element={<Quiz/>} />
         <Route path="/Login" element = {<LoginForm/>}  />
+        <Route path="/Register" element = {<Register/>} />
       </Routes>
 
       {/* <div className='App'>
